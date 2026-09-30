@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con Horta de Lucinda para consultar plantones, productos o preparar un pedido.">
+  <title>Contacto | Horta de Lucinda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="inicio">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Horta de Lucinda, página de inicio">
+      <img src="img/logo.png" alt="">
+      <span>Horta <strong>de Lucinda</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="plantones.html">Plantones</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner page-banner-contact" aria-labelledby="page-title">
+      <div class="section-wrap page-banner-inner">
+        <p class="eyebrow">Estamos cerca</p>
+        <h1 id="page-title">Cuéntanos qué<br>te gustaría cultivar.</h1>
+        <p>Resolvemos tus dudas y te ayudamos a preparar un pedido a medida.</p>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" aria-labelledby="form-title">
+      <aside class="contact-aside">
+        <p class="eyebrow">Hablemos de huerta</p>
+        <h2>Estamos al otro lado.</h2>
+        <p>Cuéntanos qué necesitas y te responderemos con la información de temporada y disponibilidad.</p>
+        <address>
+          <strong>Horta de Lucinda</strong><br>
+          Camino de la Vega, 12<br>
+          46000 Valencia
+        </address>
+        <p><a href="tel:+34961002030">+34 961 00 20 30</a><br><a href="mailto:sergio@hortadelucinda.example">sergio@hortadelucinda.example</a></p>
+        <p class="contact-hours">Lunes a viernes<br>09:00–14:00 · 16:00–18:00</p>
+      </aside>
+
+      <div class="form-panel">
+        <p class="eyebrow">Consulta o pedido</p>
+        <h2 id="form-title">Envíanos un mensaje</h2>
+        <p class="form-notice">Formulario demostrativo: al enviarlo se abrirá tu aplicación de correo. Esta web no almacena datos ni procesa pedidos.</p>
+        <form action="mailto:sergio@hortadelucinda.example" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <div class="form-field"><label for="nombre">Nombre <span aria-hidden="true">*</span></label><input type="text" id="nombre" name="nombre" autocomplete="given-name" required></div>
+            <div class="form-field"><label for="apellidos">Apellidos <span aria-hidden="true">*</span></label><input type="text" id="apellidos" name="apellidos" autocomplete="family-name" required></div>
+            <div class="form-field"><label for="email">Email <span aria-hidden="true">*</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
+            <div class="form-field"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="tel"></div>
+            <div class="form-field"><label for="tipo-cliente">Tipo de cliente</label><select id="tipo-cliente" name="tipo-cliente"><option value="particular">Particular</option><option value="restauracion">Restauración</option><option value="comercio">Comercio</option><option value="otro">Otro</option></select></div>
+            <div class="form-field"><label for="producto">Producto de interés</label><select id="producto" name="producto"><option value="">Selecciona una opción</option><option value="tomate">Tomates</option><option value="pimiento">Pimientos</option><option value="lechuga">Lechugas</option><option value="cebolla">Cebollas</option><option value="calabacin">Calabacines</option><option value="pepino">Pepinos</option><option value="berenjena">Berenjenas</option><option value="varios">Varios productos</option></select></div>
+            <div class="form-field"><label for="cantidad">Cantidad aproximada</label><input type="number" id="cantidad" name="cantidad" min="1" max="500" step="1" placeholder="Ej.: 5"></div>
+            <div class="form-field"><label for="fecha">Fecha deseada</label><input type="date" id="fecha" name="fecha"></div>
+          </div>
+
+          <fieldset class="choice-group">
+            <legend>¿Qué te interesa?</legend>
+            <label class="choice"><input type="radio" name="interes" value="plantones" required><span>Plantones</span></label>
+            <label class="choice"><input type="radio" name="interes" value="productos"><span>Productos</span></label>
+            <label class="choice"><input type="radio" name="interes" value="ambos"><span>Ambos</span></label>
+          </fieldset>
+
+          <fieldset class="choice-group">
+            <legend>Categorías que te interesan</legend>
+            <label class="choice"><input type="checkbox" name="categoria" value="fruto"><span>Hortalizas de fruto</span></label>
+            <label class="choice"><input type="checkbox" name="categoria" value="hoja"><span>Hortalizas de hoja</span></label>
+            <label class="choice"><input type="checkbox" name="categoria" value="raiz"><span>Raíz y bulbo</span></label>
+          </fieldset>
+
+          <div class="form-field"><label for="mensaje">Mensaje <span aria-hidden="true">*</span></label><textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué tienes en mente..." required></textarea></div>
+          <p class="required-note"><span aria-hidden="true">*</span> Campos obligatorios</p>
+          <div class="form-actions"><button class="button button-primary" type="submit">Preparar mensaje <span aria-hidden="true">→</span></button><button class="button button-secondary" type="reset">Limpiar formulario</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div class="footer-brand"><a class="brand brand-footer" href="index.html"><img src="img/logo.png" alt="">A Horta <strong>de Lucinda</strong></a><p>Pequeños cuidados. Grandes cosechas.</p></div>
+      <div class="footer-column"><h2>Visítanos</h2><address>Camino de la Vega, 12<br>46000 Valencia</address><a href="mailto:sergio@hortadelucinda.example">sergio@hortadelucinda.example</a><a href="tel:+34961002030">+34 961 00 20 30</a></div>
+      <div class="footer-column"><h2>Explora</h2><a href="plantones.html">Plantones</a><a href="productos.html">Productos</a><a href="contacto.html">Contacto y pedidos</a></div>
+      <div class="footer-column"><h2>En la red</h2><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+    </div>
+    <div class="footer-bottom section-wrap"><p>© 2026 Horta de Lucinda · Empresa ficticia para uso educativo.</p><a href="#inicio">Volver al inicio ↑</a></div>
+  </footer>
+  <a class="back-to-top" href="#inicio" aria-label="Volver al inicio de la página" title="Volver arriba">↑</a>
+</body>
+</html>
