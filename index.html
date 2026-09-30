@@ -3,164 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Plantones fuertes y hortalizas de temporada cultivados con cuidado en Horta de Lucinda.">
-  <title>Horta de Lucinda</title>
+  <meta name="description" content="A Horta de Lucinda cultiva plantones y hortalizas frescas de temporada con un enfoque cercano, natural y de calidad.">
+  <meta name="theme-color" content="#1c4837">
+  <title>A Horta de Lucinda | Huerta cercana y productos frescos</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body id="inicio">
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Horta de Lucinda, página de inicio">
-      <img src="img/logo.png" alt="">
-      <span>Horta <strong>de Lucinda</strong></span>
-    </a>
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a href="index.html" aria-current="page">Inicio</a>
-      <a href="plantones.html">Plantones</a>
-      <a href="productos.html">Productos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Ir a la página principal de A Horta de Lucinda">
+        <img src="img/logo.png" alt="Logo de A Horta de Lucinda">
+        <span>A Horta <strong>de Lucinda</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav-toggle-line" aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="plantones.html">Plantones</a>
+        <a href="productos.html">Productos</a>
+        <a href="ferias.html">Ferias</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- Presentación de la empresa y acceso rápido al catálogo. -->
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="img/portada.jpg" alt="Hileras de hortalizas creciendo en una huerta">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">Cultivo local · temporada a temporada</p>
-        <h1 id="hero-title">Da nosa terra,<br>directo a tu mesa.</h1>
-        <p>Plantones cuidados desde el primer brote y hortalizas recogidas en su mejor momento.</p>
-        <a class="button button-light" href="productos.html">Ver la cosecha</a>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1400&q=80" alt="Huerta con hortalizas verdes y plantas bien cuidadas">
       </div>
-      <span class="hero-stamp" aria-hidden="true">Cultivar<br>con sentido</span>
-    </section>
-
-    <section class="intro section-wrap" aria-labelledby="intro-title">
-      <div class="intro-copy">
-        <p class="eyebrow">Una huerta cercana</p>
-        <h2 id="intro-title">Crecer bien empieza<br>por cuidar el origen.</h2>
-      </div>
-      <div class="intro-text">
-        <p>En <strong>Horta de Lucinda</strong> cultivamos plantones y hortalizas para quienes valoran el sabor, el trabajo bien hecho y el ritmo de cada estación. Acompañamos cada cultivo desde la preparación del terreno hasta la cosecha.</p>
-        <p>Trabajamos con <em>variedades seleccionadas</em> y prácticas respetuosas con el suelo, para ofrecer productos honestos, frescos y de proximidad.</p>
-      </div>
-    </section>
-
-    <section class="offer-section" aria-labelledby="offer-title">
-      <div class="section-wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Dos maneras de disfrutar la huerta</p>
-            <h2 id="offer-title">Lo que cultivamos</h2>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Huerta cercana · cultivo cuidadoso</p>
+          <h1 id="hero-title">La huerta de cada estación, siempre en tu mesa.</h1>
+          <p class="hero-copy">En A Horta de Lucinda cuidamos cada planta con paciencia, respeto por la tierra y mucha dedicación para ofrecer productos frescos, naturales y de calidad.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="productos.html">Ver cosecha</a>
+            <a class="btn btn-secondary" href="plantones.html">Descubrir plantones</a>
           </div>
-          <p>Elige cómo empieza tu próxima receta.</p>
+          <ul class="hero-points" aria-label="Puntos clave de la huerta">
+            <li>Productos de temporada</li>
+            <li>Cultivo local</li>
+            <li>Trabajo cercano</li>
+          </ul>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <a class="feature-image-link" href="plantones.html" aria-label="Descubre nuestros plantones">
-              <img src="img/plantones/tomate.jpg" alt="Plantones jóvenes de tomate listos para trasplantar">
-            </a>
-            <div class="feature-card-copy">
-              <p class="eyebrow">Para cultivar en casa</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Una huerta con identidad</p>
+          <h2 id="intro-title">Naturalidad, sabor y cuidado desde la siembra.</h2>
+        </div>
+        <div class="info-stack reveal">
+          <div class="info-card">
+            <span class="icon-badge" aria-hidden="true">🌱</span>
+            <div>
               <h3>Plantones con buen comienzo</h3>
-              <p>Variedades sanas y listas para echar raíces en tu huerto o terraza.</p>
-              <a class="text-link" href="plantones.html">Explorar plantones <span aria-hidden="true">→</span></a>
+              <p>Animamos cada brote con una base sólida para que seed y crezca con fuerza.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="icon-badge" aria-hidden="true">🥬</span>
+            <div>
+              <h3>Hortalizas frescas</h3>
+              <p>Recogidas en el momento justo para ofrecer sabor, textura y frescura reales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="offer-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Lo que cultivamos</p>
+            <h2 id="offer-title">Hortalizas y plantones para cada rincón.</h2>
+          </div>
+          <p>Una huerta pensada para quienes quieren disfrutar de productos cercanos, con personalidad y cuidado en cada paso.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-image">
+              <img src="https://images.unsplash.com/photo-1592841200221-7d1f57eafaa2?auto=format&fit=crop&w=1000&q=80" alt="Plantones de tomate listos para plantar en el huerto">
+            </div>
+            <div class="feature-body">
+              <span class="tag">Plantones</span>
+              <h3>Buen comienzo para cultivar</h3>
+              <p>Variedades seleccionadas para huerto, terraza o maceta con un crecimiento sano y equilibrado.</p>
+              <a class="link-text" href="plantones.html">Explorar plantones <span aria-hidden="true">→</span></a>
             </div>
           </article>
-          <article class="feature-card">
-            <a class="feature-image-link" href="productos.html" aria-label="Descubre nuestras hortalizas">
-              <img src="img/productos/tomate.jpg" alt="Tomates frescos recién cosechados">
-            </a>
-            <div class="feature-card-copy">
-              <p class="eyebrow">Recién cosechado</p>
-              <h3>Hortalizas de temporada</h3>
-              <p>Productos frescos, recogidos cerca y preparados para disfrutar.</p>
-              <a class="text-link" href="productos.html">Ver productos <span aria-hidden="true">→</span></a>
+
+          <article class="feature-card reveal">
+            <div class="feature-image">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=80" alt="Tomates y hortalizas frescas recién cosechadas en la huerta">
+            </div>
+            <div class="feature-body">
+              <span class="tag">Cosecha propia</span>
+              <h3>Productos frescos de temporada</h3>
+              <p>Tomates, lechugas, pimientos y más cosechados con el ritmo natural de la huerta.</p>
+              <a class="link-text" href="productos.html">Ver productos <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-image">
+              <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=80" alt="Puesta del mercado con productos de la huerta comunicando proximidad">
+            </div>
+            <div class="feature-body">
+              <span class="tag orange">Ferias</span>
+              <h3>Encuéntranos en la comunidad</h3>
+              <p>Nos vemos en ferias y mercados locales, compartiendo trabajo, sabor y cercanía.</p>
+              <a class="link-text" href="ferias.html">Ver ferias <span aria-hidden="true">→</span></a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <div class="season-row section-wrap">
-      <aside class="season-note" aria-labelledby="season-title">
-        <span class="season-mark" aria-hidden="true">✳</span>
-        <div>
-          <p class="eyebrow">Ahora en la huerta</p>
-          <h2 id="season-title">Producto de temporada</h2>
-          <p>Los tomates de temporada ya están en su punto: carnosos, aromáticos y perfectos para una ensalada sencilla.</p>
-          <a class="text-link" href="productos.html">Consultar disponibilidad <span aria-hidden="true">→</span></a>
-        </div>
-      </aside>
-      <div class="season-detail">
-        <p class="eyebrow">Del campo al plato</p>
-        <p>La temporada manda. Consulta el catálogo para conocer los formatos disponibles y los productos que acabamos de recoger.</p>
-      </div>
-    </div>
-
-    <!-- Los controles nativos permiten reproducir los recursos sin JavaScript. -->
-    <section class="media-section" aria-labelledby="media-title">
-      <div class="section-wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Un paseo por el cultivo</p>
-            <h2 id="media-title">La huerta, por dentro</h2>
+    <section class="section" aria-labelledby="grow-title">
+      <div class="container split-grid">
+        <div class="image-stack reveal">
+          <div class="showcase-photo">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa52ac9fc4a6?auto=format&fit=crop&w=1200&q=80" alt="Parcela de huerta con plantas verdes y tierra preparada">
           </div>
-          <p>Un vistazo al trabajo que hay detrás de cada cosecha.</p>
+          <div class="showcase-photo small">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=900&q=80" alt="Detalle de una planta joven en un huerto">
+          </div>
         </div>
-        <div class="media-grid">
-          <figure class="video-frame">
-            <video controls preload="metadata" poster="img/portada.jpg">
-              <source src="video/huerta.mp4" type="video/mp4">
-              Tu navegador no puede reproducir este vídeo. Puedes visitar nuestra sección de <a href="plantones.html">plantones</a>.
-            </video>
-            <figcaption>Así cuidamos cada cultivo a lo largo de la temporada.</figcaption>
+
+        <div class="aside-content reveal">
+          <p class="eyebrow">Cosecha propia</p>
+          <h2 id="grow-title">Cultivo real, con paciencia y proximidad.</h2>
+          <p>La huerta de A Horta de Lucinda se rige por la observación, el trabajo constante y la temporada. Cada planta se cuida para ofrecer productos sanos, sabrosos y con carácter.</p>
+          <div class="callout" style="margin-top: 1.5rem;">
+            <h3>Un sabor que habla de tierra.</h3>
+            <p>Trabajamos con respeto por el suelo y la verdad del cultivo: nada se improvisa, todo se cuida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sand galery-section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Galería</p>
+            <h2 id="gallery-title">Un vistazo a la huerta.</h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <figure class="gallery-card tall">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa52ac9fc4a6?auto=format&fit=crop&w=900&q=80" alt="Plantas de huerta en una parcela bien cuidada" loading="lazy">
+            <figcaption class="gallery-caption">Parcelas en crecimiento.</figcaption>
           </figure>
-          <div class="audio-panel">
-            <p class="eyebrow">Sonidos de la mañana</p>
-            <h3>Un momento de calma en la huerta</h3>
-            <p>Escucha el ambiente mientras recorres nuestros cultivos.</p>
-            <audio controls preload="metadata">
-              <source src="audio/huerta.mp3" type="audio/mpeg">
-              Tu navegador no puede reproducir este audio.
-            </audio>
+
+          <figure class="gallery-card medium">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=900&q=80" alt="Tomates y pimientos en un huerto natural" loading="lazy">
+            <figcaption class="gallery-caption">Cosecha de verano.</figcaption>
+          </figure>
+
+          <figure class="gallery-card medium">
+            <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=900&q=80" alt="Hortalizas frescas listas para recoger" loading="lazy">
+            <figcaption class="gallery-caption">Frescura y color.</figcaption>
+          </figure>
+
+          <figure class="gallery-card wide">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Huerta con varias plantas cultivadas" loading="lazy">
+            <figcaption class="gallery-caption">Cada rincón, tratado con atención.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <p class="eyebrow" style="color: rgba(255,255,255,0.75);">Ferias y contacto</p>
+          <h2 id="visit-title">Vino a visitarnos o pide tu cesta.</h2>
+          <p>Consulta nuestro calendario de ferias, encuentra los días cercanos y pregunta por nuestros plantones o productos frescos.</p>
+          <div class="cta-row">
+            <a class="btn btn-light" href="ferias.html">Ver ferias</a>
+            <a class="btn btn-secondary" href="contacto.html">Enviar consulta</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-main section-wrap">
+  <footer class="site-footer" id="footer">
+    <div class="container footer-main">
       <div class="footer-brand">
-        <a class="brand brand-footer" href="index.html"><img src="img/logo.png" alt="">A Horta <strong>de Lucinda</strong></a>
+        <a class="brand-footer" href="index.html" aria-label="Volver a la página de inicio">
+          <img src="img/logo.png" alt="Logo de A Horta de Lucinda">
+          <span>A Horta <strong>de Lucinda</strong></span>
+        </a>
         <p>Pequeños cuidados. Grandes cosechas.</p>
       </div>
+
       <div class="footer-column">
-        <h2>Visítanos</h2>
-        <address>Camino de la Vega, 12<br>46000 Valencia</address>
-        <a href="sergio@hortadelucinda.example">sergio@hortadelucinda.example</a>
-        <a href="tel:+34961002030">+34 961 00 20 30</a>
-      </div>
-      <div class="footer-column">
-        <h2>Explora</h2>
+        <h3>Explora</h3>
         <a href="plantones.html">Plantones</a>
         <a href="productos.html">Productos</a>
-        <a href="contacto.html">Contacto y pedidos</a>
+        <a href="ferias.html">Ferias</a>
+        <a href="contacto.html">Contacto</a>
       </div>
+
       <div class="footer-column">
-        <h2>En la red</h2>
+        <h3>Contacto</h3>
+        <address>Camino de la Vega, 12<br>46000 Valencia</address>
+        <a href="tel:+34961002030">+34 961 00 20 30</a>
+        <a href="mailto:sergio@hortadelucinda.example">sergio@hortadelucinda.example</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Síguenos</h3>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
       </div>
     </div>
-    <div class="footer-bottom section-wrap">
-      <p>© 2026 Horta de Lucinda.</p>
-      <a href="#inicio">Volver al inicio ↑</a>
+
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> A Horta de Lucinda.</p>
+      <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
 
-  <a class="back-to-top" href="#inicio" aria-label="Volver al inicio de la página" title="Volver arriba">↑</a>
+  <a class="back-to-top" href="#inicio" aria-label="Volver al inicio de la página">↑</a>
 </body>
 </html>
